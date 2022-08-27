@@ -1,0 +1,28 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+
+        var product =
+        {
+            pid: 111,
+            pname: "Beauty_Product",
+            price: 15000,
+            display: function () {
+
+                return "ID :" + this.pid + " Product_Name =" + this.pname + " Price =" + this.price;
+            },
+            discount: function () {
+                var result;
+                result = this.price - (this.price * 0.10);
+                return "After Discount price:" + result;
+            }
+
+        }
+        document.getElementById("d1").innerHTML = product.display();
+        document.getElementById("d2").innerHTML = product.discount();
+    </script>
+</body>
+
+</html>

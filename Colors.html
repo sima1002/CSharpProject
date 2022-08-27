@@ -1,0 +1,26 @@
+<html>
+<head>
+</head>
+<body>
+    Enter color:<input type="text" id="t1"><br>
+    <input type="button" value="Add" onclick="Addition()"><br>
+    <input type="button" value="Show" onclick="display()"><br>
+
+    <b id="b1"></b>
+    <div id="d1"> </div>
+    <script>
+        var arr = ["Pink", "Red", "Blue", "Purple", "Yellow"];
+        function Addition()
+        {
+            var n1 = document.getElementById("t1").value;
+            arr.push(n1);
+        }
+        function display()
+        {
+            document.write(arr);
+        }
+            
+
+    </script>
+</body>
+</html>

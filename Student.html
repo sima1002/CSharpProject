@@ -1,0 +1,31 @@
+<html>
+<head>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+
+        var stud=
+        {
+            m1:80,
+            m2:87,
+            m3:95,
+            display:function()
+            {
+                return " Sub1: " + this.m1 + " Sub2: " + this.m2 + " Sub3:" +this.m3+" Total="+(this.m1+this.m2+this.m3);
+                 
+            },
+            percentage:function()
+            {
+                var per;
+                per=((this.m1+this.m2+this.m3)/400)*100;
+               
+                return "percentage:"+per;
+            }
+        }
+        document.getElementById("d1").innerHTML=stud.display();
+        document.getElementById("d2").innerHTML = stud.percentage();
+    </script>
+</body>
+</html>

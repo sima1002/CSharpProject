@@ -1,0 +1,31 @@
+<html>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <script>
+
+            var mobile=
+            {
+                 model:"T1 Series",
+                 mname: "Vivo",
+                 mprice: 25000,
+                 mcamera:64,
+            display:function()
+                {
+
+                return "Mobile_ID :" + this.model + "  Mobile_Name :" + this.mname + "   Mobile_Price :" + this.mprice + "   Mobile_Camera:"+this.mcamera;
+                },
+            discount:function()
+                {
+                    var result;
+                    result=this.mprice-(this.mprice * 0.10);
+                    return "After Discount Mobile price:"+result;
+                 }
+
+          }
+        document.getElementById("d1").innerHTML = mobile.display();
+       document.getElementById("d2").innerHTML =mobile.discount();
+    </script>
+</body>
+
+</html>
