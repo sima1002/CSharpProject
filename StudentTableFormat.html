@@ -1,0 +1,54 @@
+<html>
+<head>
+</head>
+<body>
+
+    <div id="d1"></div>
+    <script>
+        var student =
+            [
+            {
+            RollNo:101,
+            Name:"Sima",
+            Percentage:89
+            },
+                {
+                RollNo:102,
+                    Name: "Ojasvi",
+                    Percentage: 94
+            },
+                {
+                    RollNo:103,
+                    Name: "Vaibhav",
+                    Percentage: 86
+            },
+                {
+                    RollNo: 104,
+                     Name: "Rohan",
+                    Percentage: 76
+            },
+                {
+                    RollNo: 105,
+                    Name: "Dinesh",
+                    Percentage: 88
+            }
+            ]
+        
+        var data = "<table border='1'><tr><th>RollNo</th><th>Name</th><th>Percentage</th>";
+        for (var i = 0; i < student.length; i++) {
+            data += "<tr><td>" + student[i].RollNo + "</td><td>" + student[i].Name + "</td><td>"
+                + student[i].Percentage + "</td></tr>";
+        }
+        data += "</table>";
+        document.getElementById("d1").innerHTML = data;
+    </script>
+
+
+
+
+
+
+
+</body>
+
+</html>
